@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .submit-btn {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Task</h2>
+
+<div class="container">
+    <form action="regTAsk.php" method="post">
+        <div class="form-group">
+            <label for="eid">Tid:</label>
+            <input type="text" name="tid" >
+        </div>
+        <div class="form-group">
+            <label for="tel">Name:</label>
+            <input type="text" name="name">
+        </div>
+        <div class="form-group">
+            <label for="name">Start Date:</label>
+            <input type="text" name="st" >
+        </div>
+        <div class="form-group">
+            <label for="email">End Date:</label>
+            <input type="text" name="et" >
+        </div>
+        <div class="form-group">
+            <label for="des">nature:</label>
+            <input type="text" name="na" >
+        </div>
+        <div class="center">
+            <input type="submit" value="Submit" class="submit-btn">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
